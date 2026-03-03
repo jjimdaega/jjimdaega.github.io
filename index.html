@@ -3,50 +3,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>찜닭대가 | 청주 산남동 찜닭 맛집</title>
-<meta name="description" content="청주시 서원구 산남동 찜닭 전문점 찜닭대가. 100% 국내산 닭 사용, 직접 숙성한 안동찜닭 스타일 양념. 순살, 한우대창 찜닭 전문.">
+<title>찜닭대가 | 청주 산남동 찜닭 전문점</title>
+<meta name="description" content="청주 산남동 찜닭대가. 100% 국내산 닭 사용. 순살찜닭, 한우대창 찜닭 전문.">
+
 <style>
-body{
+body {
     margin:0;
-    font-family:'Apple SD Gothic Neo',sans-serif;
-    background:#111;
-    color:#fff;
+    font-family: 'Pretendard', sans-serif;
+    background:#f8f8f8;
+    color:#333;
 }
-header{
-    text-align:center;
+header {
+    background:white;
     padding:60px 20px;
-    background:linear-gradient(135deg,#8B0000,#000);
+    text-align:center;
+    border-bottom:1px solid #eee;
 }
-h1{font-size:42px;margin-bottom:10px;}
-section{
-    padding:40px 20px;
-    max-width:1000px;
+h1 {
+    font-size:42px;
+    margin:0;
+    color:#b22222;
+}
+.subtitle {
+    margin-top:10px;
+    color:#666;
+}
+section {
+    max-width:1100px;
     margin:auto;
+    padding:50px 20px;
 }
-.card{
-    background:#1c1c1c;
-    padding:20px;
-    margin:20px 0;
+h2 {
+    margin-bottom:20px;
+    color:#b22222;
+}
+.card {
+    background:white;
+    padding:30px;
     border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom:40px;
 }
-h2{color:#ff4444;}
-.price{color:#ffcc00;}
-.footer{
+table {
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+th, td {
+    padding:14px;
+    border-bottom:1px solid #eee;
+    text-align:left;
+}
+th {
+    background:#fafafa;
+}
+.price {
+    font-weight:bold;
+    color:#b22222;
+}
+.footer {
+    background:white;
     text-align:center;
     padding:30px;
-    background:#000;
     font-size:14px;
+    color:#777;
+    border-top:1px solid #eee;
 }
-button{
-    background:#ff4444;
-    border:none;
-    padding:15px 25px;
-    color:white;
-    font-size:16px;
-    border-radius:8px;
-    cursor:pointer;
+@media(max-width:768px){
+    h1{font-size:30px;}
+    table{font-size:14px;}
 }
-button:hover{background:#cc0000;}
 </style>
 </head>
 
@@ -54,75 +80,130 @@ button:hover{background:#cc0000;}
 
 <header>
 <h1>찜닭대가</h1>
-<p>청주 산남동 찜닭 전문점</p>
-<p>📍 청주시 서원구 산남동 968 1층<br>
-📞 043-298-2928<br>
-🕒 12:00 ~ 23:40</p>
-<button onclick="location.href='tel:0432982928'">전화 주문하기</button>
+<p class="subtitle">청주 산남동 100% 국내산 닭 찜닭 전문점</p>
+<p>청주시 서원구 산남동 968 1층 | 043-298-2928 | 12:00 ~ 23:40</p>
 </header>
 
 <section>
-<h2>가게 소개</h2>
-<div class="card">
-<p>
-안녕하세요 찜닭대가 입니다 ♥<br>
-항상 노력하는 '찜닭대가' 되겠습니다. 믿고 주문해주세요! 감사합니다.
-</p>
-<p>
-✔ 100% 국내산 닭만 사용<br>
-✔ 태국·브라질 수입산 정육 사용 안함<br>
-✔ 직접 숙성한 안동찜닭 스타일 양념<br>
-✔ 지옥맛 제외 전 메뉴 100% 순수 고춧가루 사용
-</p>
-</div>
 
+<div class="card">
 <h2>맛 선택</h2>
-<div class="card">
-어린이맛 (매운맛X)<br>
-기본맛 (달달 매콤 짭잘)<br>
-매운맛 (+500원)<br>
-지옥맛 (+500원 / 불닭볶음면 정도)
-</div>
-
-<h2>대표 메뉴</h2>
-
-<div class="card">
-<b>1인 순살찜닭</b><br>
-순살 200g + 밥 포함<br>
-<span class="price">13,900원</span>
+<p><b>어린이맛</b> : 매운맛 없음, 단짠 맛</p>
+<p><b>기본맛</b> : 단짠 매콤</p>
+<p><b>매운맛</b> : +500원</p>
+<p><b>지옥맛</b> : +500원</p>
 </div>
 
 <div class="card">
-<b>순살찜닭</b><br>
-소(400g) 20,900원<br>
-중(700g) 25,900원<br>
-대(1000g) 32,700원
+<h2>메인 메뉴</h2>
+<table>
+<tr>
+<th>메뉴</th>
+<th>구성</th>
+<th>가격</th>
+</tr>
+
+<tr>
+<td>1인 순살 찜닭</td>
+<td>순살 200g</td>
+<td class="price">13,900원</td>
+</tr>
+
+<tr>
+<td>순살 찜닭 소 (1~2인)</td>
+<td>순살 400g</td>
+<td class="price">20,900원</td>
+</tr>
+
+<tr>
+<td>순살 찜닭 중 (2~3인)</td>
+<td>순살 700g</td>
+<td class="price">25,900원</td>
+</tr>
+
+<tr>
+<td>순살 찜닭 대 (4~5인)</td>
+<td>순살 1000g</td>
+<td class="price">32,700원</td>
+</tr>
+
+<tr>
+<td>한마리(뼈) 찜닭</td>
+<td>국내산 11호 1kg</td>
+<td class="price">25,700원</td>
+</tr>
+
+<tr>
+<td>1인 한우대창 순살찜닭</td>
+<td>순살 200g + 대창 100g</td>
+<td class="price">18,600원</td>
+</tr>
+
+<tr>
+<td>한우대창 순살 찜닭 소</td>
+<td>순살 400g + 대창 100g</td>
+<td class="price">26,700원</td>
+</tr>
+
+<tr>
+<td>한우대창 순살 찜닭 중</td>
+<td>순살 700g + 대창 200g</td>
+<td class="price">37,500원</td>
+</tr>
+
+<tr>
+<td>한우대창 순살 찜닭 대</td>
+<td>순살 1000g + 대창 300g</td>
+<td class="price">43,900원</td>
+</tr>
+
+<tr>
+<td>한우대창 한마리(뼈) 찜닭</td>
+<td>11호 국내산 닭 + 대창 200g</td>
+<td class="price">36,300원</td>
+</tr>
+
+</table>
 </div>
 
 <div class="card">
-<b>한우대창 순살찜닭</b><br>
-소 26,700원<br>
-중 37,500원<br>
-대 43,900원
+<h2>1인 메뉴 추가 옵션</h2>
+<p>공기밥 1개 +1,000원</p>
+<p>순살 50g 추가 +1,000원</p>
 </div>
 
 <div class="card">
-<b>한마리(뼈)찜닭</b><br>
-국내산 1Kg<br>
-25,700원
+<h2>사리 추가</h2>
+<table>
+<tr><td>순살(200g)</td><td class="price">5,900원</td></tr>
+<tr><td>한우대창(100g)</td><td class="price">6,900원</td></tr>
+<tr><td>꽃분모자(3개)</td><td class="price">1,000원</td></tr>
+<tr><td>치즈떡(3개)</td><td class="price">1,000원</td></tr>
+<tr><td>치즈떡(5개)</td><td class="price">1,500원</td></tr>
+<tr><td>밀떡(5개)</td><td class="price">1,000원</td></tr>
+<tr><td>밀떡(8개)</td><td class="price">1,500원</td></tr>
+<tr><td>감자고기만두(2개)</td><td class="price">1,500원</td></tr>
+<tr><td>감자김치만두(2개)</td><td class="price">1,500원</td></tr>
+<tr><td>메추리알(3개)</td><td class="price">1,500원</td></tr>
+<tr><td>당면(50g)</td><td class="price">1,000원</td></tr>
+<tr><td>야채추가</td><td class="price">1,500원</td></tr>
+<tr><td>감자추가(100g)</td><td class="price">2,000원</td></tr>
+<tr><td>감자수제비(100g)</td><td class="price">1,500원</td></tr>
+</table>
 </div>
 
-<h2>가게 알림</h2>
 <div class="card">
-● 리뷰 이벤트 진행 중<br>
-● 공기밥 별도 주문 (1인 제외)<br>
-● 안드시는 재료는 요청 시 제외 가능
+<h2>사이드 메뉴</h2>
+<table>
+<tr><td>계란찜</td><td class="price">2,500원</td></tr>
+<tr><td>공깃밥 1개</td><td class="price">1,200원</td></tr>
+</table>
 </div>
 
 </section>
 
 <div class="footer">
-© 2026 찜닭대가 | 청주 찜닭 맛집
+© 2026 찜닭대가 | 청주 찜닭 전문점
 </div>
 
 </body>
